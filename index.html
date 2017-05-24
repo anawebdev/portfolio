@@ -5,6 +5,14 @@
             <title>Portfolio</title>
             <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
             <link rel="stylesheet" href="stylesheets/ie.css">
+            <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <script src="node_modules/aos/dist/aos.js"></script>
+            <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+            <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+            <script> AOS.init(); </script>
+                
+            </script>
             <meta name="viewport" content="width=device-width, initial-scale=1">
         </head>
         <body>
@@ -27,13 +35,15 @@
                 </div>
             </div>
 
+<!-- PROJECTS SECTION -->
+
             <div id="projects" class="container-fluid">
                 <h2>Projects</h2>
 
                 <div class="row box-row">
 
                     <div class="col-md-4 left">
-                        <div class='box-scene '>
+                        <div class='box-scene'>
                             <div class='box'>
                                 <div class='front face'>
                                     <a target="_blank" href="http://codepen.io/feuerbird29/full/RVomLb/" ><img src="./images/coffeebox.jpg" class="img-fluid"/></a>
@@ -166,22 +176,67 @@
                 <br>
             </div>
 
+<!-- CONTACT SECTION -->            
+
             <div id="contact" class="container-fluid">
                 <h2>Contact</h2>
-                <div class="row col-md-2">
+                <div class="row">
+                    <div class="col-md-2">
+                        </div>
+                    <div class="col-md-8">
+                    <form>
+                    <form method="post"  enctype="text/plain" >
+                        <input placeholder="Name" type="text" name="Name"/>
+                        <br>
+                        <br>
+                        <input placeholder="Email" type="text" name="Email"/>
+                        <br>
+                        <br>
+                        <textarea placeholder="Message" name="message"></textarea>
+                        <br>
+                        <button type="submit" class="btn contact-btn">Send</button>
+                    </form>
+                    </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                    </div>
+                    <div class="col-md-2">
+                        <a href="https://github.com/anawebdev" target="_blank">
+                        <button class="btn  contact-btn" id="github">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                            GitHub
+                        </button>
+                        </a>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="https://www.freecodecamp.com/anawebdev" target="_blank">
+                        <button class="btn  contact-btn" id="fcc">
+                            <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+                            FreeCodeCamp
+                        </button>
+                        </a>
+                    </div>
+                     <div class="col-md-2"> 
+                         <a href="https://codepen.io/feuerbird29/" target="_blank">                  
+                        <button class="btn  contact-btn" id="codepen">
+                            <i class="fa fa-codepen" aria-hidden="true"></i>
+                            CodePen
+                        </button>
+                         </a>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="https://twitter.com/anawebdev" target="_blank">
+                        <button class="btn contact-btn" id="twitter">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            Twitter
+                        </button>
+                        </a>
+                    </div>
                     
                 </div>
-                <div class="row col-md-8">
-                    <form>
-                        <input placeholder="Name"/>
-                        <br>
-                        <br>
-                        <input placeholder="Email"/>
-                        <br>
-                        <br>
-                        <textarea placeholder="Message"></textarea>
-                    </form>
-                </div>
+                
             </div>
 
             <script rel="stylesheet" href="js/index.js"></script>

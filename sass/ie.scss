@@ -12,6 +12,8 @@ $light-pink: #C5C6C7;
 $bright-turqoise: #66FCF1;
 $medium-blue: #45A29E;
 $box-size: 200px;
+$shadow: rgba(0,0,0, 0.18);
+
 
 body, html {
     margin: 0;
@@ -50,7 +52,7 @@ h4 {
     cursor: pointer;
     font-weight: 700px;
 }
-a {
+#projects a {
     cursor: default;
 }
 
@@ -81,6 +83,8 @@ a {
     color: $light-pink;
 }
 
+// MOVING BOXES
+
 .box-scene {
     -webkit-perspective: 700;
     width: 400px;
@@ -98,7 +102,10 @@ a {
     -webkit-transform-origin: 90px 90px -90px;
     
     /* float: left; */
-    margin: 30px auto;     
+    margin: 30px auto;  
+
+    //animations
+
 }
 
 .face {
@@ -125,6 +132,47 @@ a {
 .box-scene {
     max-width: 100%;
 }
+
+// CONTACT SECTION 
+
+form{
+    width: 100%;
+}
+textarea {
+    height: 5em;
+}
+textarea, input {
+    width: 100%;
+    padding: 5px;
+    background: white;
+    border:3px solid white;
+    box-shadow: 3px 3px 5px $shadow;
+}
+.contact-btn {
+    margin: 20px 5px 40px 5px;
+    width: 100%;
+    background: $medium-blue;
+    border: 3px solid white;
+    border-radius: 0;
+    color: white;
+    text-align: center;
+}
+i {
+    margin-right: 5px;
+}
+::placeholder {
+    color:silver;
+    font-style: italic;
+    font-size:0.8em;
+    padding-left: 10px;
+}
+.contact-btn:hover {
+    cursor: pointer;
+    color: $medium-blue;
+    background: white;
+    }
+
+//MEDIA QUERIES
 
 /* xs < 768 */
 @media screen and (max-width: 767px) {
