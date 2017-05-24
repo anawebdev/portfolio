@@ -3,18 +3,23 @@
  * <!--[if IE]>
  *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
  * <![endif]--> */
-/* line 15, ../sass/ie.scss */
+/* line 16, ../sass/ie.scss */
 body, html {
   margin: 0;
   padding: 0;
 }
 
-/* line 20, ../sass/ie.scss */
+/* line 21, ../sass/ie.scss */
 img {
   margin-bottom: 20px;
 }
 
-/* line 24, ../sass/ie.scss */
+/* line 25, ../sass/ie.scss */
+h2 {
+  padding: 20px 0 20px 0;
+}
+
+/* line 29, ../sass/ie.scss */
 #landingPage {
   height: 100vh;
   width: 100%;
@@ -22,26 +27,194 @@ img {
   color: #C5C6C7;
 }
 
-/* line 31, ../sass/ie.scss */
+/* line 36, ../sass/ie.scss */
 #aboutMe {
   background: #1F2833;
   color: #C5C6C7;
 }
 
-/* line 36, ../sass/ie.scss */
+/* line 41, ../sass/ie.scss */
 #skills {
   background: #45A29E;
   color: #C5C6C7;
 }
 
-/* line 41, ../sass/ie.scss */
+/* line 46, ../sass/ie.scss */
 #projects {
   background: #0B0C10;
   color: #C5C6C7;
 }
 
-/* line 46, ../sass/ie.scss */
+/* line 51, ../sass/ie.scss */
 #contact {
   background: #45A29E;
   color: #C5C6C7;
+}
+
+/* line 56, ../sass/ie.scss */
+.box-scene {
+  -webkit-perspective: 700;
+  width: 400px;
+  height: 200px;
+  margin: auto;
+  z-index: 999;
+}
+
+/* line 63, ../sass/ie.scss */
+.box-scene:hover .box {
+  -webkit-transform: rotateY(-90deg);
+}
+
+/* line 66, ../sass/ie.scss */
+.box {
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: all  0.8s ease-out;
+  -webkit-transform-origin: 90px 90px -90px;
+  /* float: left; */
+  margin: 30px auto;
+}
+
+/* line 76, ../sass/ie.scss */
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 3px white solid;
+  -webkit-backface-visibility: visible;
+  -webkit-transform-origin: 0 0;
+}
+
+/* line 85, ../sass/ie.scss */
+.front {
+  margin-bottom: 100px;
+  background: #0B0C10;
+  -webkit-transform: rotateY(0deg);
+  z-index: 2;
+}
+
+/* line 91, ../sass/ie.scss */
+.side {
+  margin-bottom: 100px;
+  background: #0B0C10;
+  -webkit-transform: rotateY(90deg);
+  z-index: 1;
+}
+
+/* line 97, ../sass/ie.scss */
+.box-scene {
+  max-width: 100%;
+}
+
+/* xs < 768 */
+@media screen and (max-width: 767px) {
+  /* line 103, ../sass/ie.scss */
+  body {
+    font-size: 0.8em;
+  }
+
+  /* line 106, ../sass/ie.scss */
+  .box-scene {
+    margin-bottom: 200px;
+  }
+
+  /* line 109, ../sass/ie.scss */
+  .box-scene:hover .box {
+    -webkit-transform: none;
+  }
+
+  /* line 112, ../sass/ie.scss */
+  .side {
+    display: none;
+  }
+
+  /* line 115, ../sass/ie.scss */
+  .box {
+    width: 300px;
+    height: 300px;
+  }
+}
+/* sm */
+@media screen and (min-width: 768px) {
+  /* line 123, ../sass/ie.scss */
+  body {
+    font-size: 1em;
+  }
+
+  /* line 126, ../sass/ie.scss */
+  .box-scene {
+    margin-bottom: 200px;
+  }
+
+  /* line 129, ../sass/ie.scss */
+  .box {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* line 133, ../sass/ie.scss */
+  .side {
+    left: 200px;
+  }
+
+  /* line 136, ../sass/ie.scss */
+  .front, .side {
+    font-size: 1em;
+  }
+}
+/* md */
+@media screen and (min-width: 992px) {
+  /* line 143, ../sass/ie.scss */
+  body {
+    font-size: 1.2em;
+  }
+
+  /* line 146, ../sass/ie.scss */
+  .box-scene {
+    margin-bottom: 100px;
+  }
+
+  /* line 149, ../sass/ie.scss */
+  .box {
+    width: 250px;
+    height: 250px;
+  }
+
+  /* line 153, ../sass/ie.scss */
+  .side {
+    left: 250px;
+  }
+
+  /* line 156, ../sass/ie.scss */
+  .front, .side {
+    font-size: 1em;
+  }
+}
+/* lg */
+@media screen and (min-width: 1200px) {
+  /* line 163, ../sass/ie.scss */
+  body {
+    font-size: 1.3em;
+  }
+
+  /* line 166, ../sass/ie.scss */
+  .box-scene {
+    margin-bottom: 100px;
+  }
+
+  /* line 169, ../sass/ie.scss */
+  .box {
+    width: 250px;
+    height: 250px;
+  }
+
+  /* line 173, ../sass/ie.scss */
+  .side {
+    left: 250px;
+  }
+
+  /* line 176, ../sass/ie.scss */
+  .front, .side {
+    font-size: 1em;
+  }
 }
