@@ -3,3 +3,45 @@
  * <!--[if IE]>
  *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
  * <![endif]--> */
+/* line 15, ../sass/ie.scss */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 20, ../sass/ie.scss */
+img {
+  margin-bottom: 20px;
+}
+
+/* line 24, ../sass/ie.scss */
+#landingPage {
+  height: 100vh;
+  width: 100%;
+  background: #0B0C10;
+  color: #C5C6C7;
+}
+
+/* line 31, ../sass/ie.scss */
+#aboutMe {
+  background: #1F2833;
+  color: #C5C6C7;
+}
+
+/* line 36, ../sass/ie.scss */
+#skills {
+  background: #45A29E;
+  color: #C5C6C7;
+}
+
+/* line 41, ../sass/ie.scss */
+#projects {
+  background: #0B0C10;
+  color: #C5C6C7;
+}
+
+/* line 46, ../sass/ie.scss */
+#contact {
+  background: #45A29E;
+  color: #C5C6C7;
+}

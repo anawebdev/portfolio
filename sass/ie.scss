@@ -3,3 +3,48 @@
  * <!--[if IE]>
  *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
  * <![endif]--> */
+
+//Color scheme
+
+$dark-grey: #0B0C10;
+$medium-grey: #1F2833;
+$light-pink: #C5C6C7;
+$bright-turqoise: #66FCF1;
+$medium-blue: #45A29E;
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    margin-bottom: 20px;
+}
+
+#landingPage {
+    height: 100vh;
+    width: 100%;
+    background: $dark-grey;
+    color: $light-pink;
+}
+
+#aboutMe {
+    background: $medium-grey;
+    color: $light-pink;
+}
+
+#skills {
+    background: $medium-blue;
+    color: $light-pink;
+}
+
+#projects {
+    background: $dark-grey;
+    color: $light-pink;
+}
+
+#contact {
+    background: $medium-blue;
+    color: $light-pink;
+}
+
