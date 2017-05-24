@@ -11,6 +11,7 @@ $medium-grey: #1F2833;
 $light-pink: #C5C6C7;
 $bright-turqoise: #66FCF1;
 $medium-blue: #45A29E;
+$box-size: 200px;
 
 body, html {
     margin: 0;
@@ -52,3 +53,128 @@ h2 {
     color: $light-pink;
 }
 
+.box-scene {
+    -webkit-perspective: 700;
+    width: 400px;
+    height: 200px;
+    margin:auto;
+    z-index: 999;
+}
+.box-scene:hover .box {
+    -webkit-transform: rotateY(-90deg);
+}
+.box {
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: all  0.8s ease-out;
+    -webkit-transform-origin: 90px 90px -90px;
+    
+    /* float: left; */
+    margin: 30px auto;     
+}
+
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 3px white solid;
+    -webkit-backface-visibility: visible; 
+    
+    -webkit-transform-origin: 0 0;
+}
+.front {
+    margin-bottom:100px;
+    background: $dark-grey;
+    -webkit-transform: rotateY(0deg);
+    z-index: 2;
+}
+.side {
+    margin-bottom:100px;
+    background:$dark-grey;
+    -webkit-transform: rotateY(90deg);
+    z-index: 1;
+}
+.box-scene {
+    max-width: 100%;
+}
+
+/* xs < 768 */
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 0.8em;
+    }
+    .box-scene {
+        margin-bottom:200px;
+    }
+    .box-scene:hover .box {
+        -webkit-transform: none;
+}
+    .side {
+        display: none;
+    }
+    .box {
+        width:300px;
+        height: 300px;
+    }
+}
+
+/* sm */
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 1em;
+    }
+   .box-scene {
+        margin-bottom:200px;
+    }
+    .box {
+        width:200px;
+        height: 200px;
+    }
+    .side {
+        left: 200px;
+    }
+    .front,.side {
+        font-size: 1em;
+    }
+}
+
+/* md */
+@media screen and (min-width: 992px) {
+    body {
+        font-size: 1.2em;
+    }
+   .box-scene {
+            margin-bottom:100px;
+             }
+    .box {
+        width:250px;
+        height: 250px;
+    }
+    .side {
+        left: 250px;
+    }
+    .front,.side {
+        font-size: 1em;
+    }
+}
+
+/* lg */
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 1.3em;
+    }
+    .box-scene {
+        margin-bottom:100px;
+    }
+    .box {
+        width:250px;
+        height: 250px;
+    }
+    .side {
+        left: 250px;
+    }
+    .front,.side {
+        font-size: 1em;
+    }
+
+}
