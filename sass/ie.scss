@@ -16,6 +16,8 @@ $box-size: 200px;
 body, html {
     margin: 0;
     padding: 0;
+    height: 100%;
+    width: 100%;
 }
 
 img {
@@ -24,6 +26,32 @@ img {
 
 h2 {
     padding: 20px 0 20px 0;
+}
+h4 {
+    text-align: center;
+    padding: 20px 10px 0px 10px;
+}
+.access-btn {
+    text-align: center;
+    border: 2px solid white;
+    padding: 5px;
+    background: none;
+    color: white;
+    border-radius: 0;
+    margin: 0 auto;
+    width:50%;
+    margin-left: 25%;
+    height: 20%;
+    margin-top: 20%;
+}
+.access-btn:hover {
+    color: $dark-grey;
+    background: white;
+    cursor: pointer;
+    font-weight: 700px;
+}
+a {
+    cursor: default;
 }
 
 #landingPage {
@@ -116,6 +144,9 @@ h2 {
         width:300px;
         height: 300px;
     }
+    a {
+    cursor: pointer;
+}
 }
 
 /* sm */
