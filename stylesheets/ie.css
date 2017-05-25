@@ -127,6 +127,29 @@ p {
 }
 
 /* line 122, ../sass/ie.scss */
+.skill {
+  width: 100%;
+  background: #1F2833;
+}
+/* line 126, ../sass/ie.scss */
+.skill h6 {
+  padding: 15px 0 15px 0;
+}
+/* line 130, ../sass/ie.scss */
+.skill p {
+  font-size: 0.7em;
+  padding-bottom: 10px;
+}
+
+/* line 136, ../sass/ie.scss */
+.skill-line {
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
+/* line 145, ../sass/ie.scss */
 .box-scene {
   -webkit-perspective: 700;
   width: 400px;
@@ -135,12 +158,12 @@ p {
   z-index: 999;
 }
 
-/* line 129, ../sass/ie.scss */
+/* line 152, ../sass/ie.scss */
 .box-scene:hover .box {
   -webkit-transform: rotateY(-90deg);
 }
 
-/* line 132, ../sass/ie.scss */
+/* line 155, ../sass/ie.scss */
 .box {
   position: relative;
   -webkit-transform-style: preserve-3d;
@@ -150,7 +173,7 @@ p {
   margin: 30px auto;
 }
 
-/* line 145, ../sass/ie.scss */
+/* line 168, ../sass/ie.scss */
 .face {
   position: absolute;
   width: 100%;
@@ -160,7 +183,7 @@ p {
   -webkit-transform-origin: 0 0;
 }
 
-/* line 154, ../sass/ie.scss */
+/* line 177, ../sass/ie.scss */
 .front {
   margin-bottom: 100px;
   background: #0B0C10;
@@ -168,7 +191,7 @@ p {
   z-index: 2;
 }
 
-/* line 160, ../sass/ie.scss */
+/* line 183, ../sass/ie.scss */
 .side {
   margin-bottom: 100px;
   background: #0B0C10;
@@ -176,22 +199,22 @@ p {
   z-index: 1;
 }
 
-/* line 166, ../sass/ie.scss */
+/* line 189, ../sass/ie.scss */
 .box-scene {
   max-width: 100%;
 }
 
-/* line 172, ../sass/ie.scss */
+/* line 195, ../sass/ie.scss */
 form {
   width: 100%;
 }
 
-/* line 175, ../sass/ie.scss */
+/* line 198, ../sass/ie.scss */
 textarea {
   height: 5em;
 }
 
-/* line 178, ../sass/ie.scss */
+/* line 201, ../sass/ie.scss */
 textarea, input {
   width: 100%;
   padding: 5px;
@@ -200,7 +223,7 @@ textarea, input {
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.18);
 }
 
-/* line 185, ../sass/ie.scss */
+/* line 208, ../sass/ie.scss */
 .contact-btn {
   margin: 5px;
   width: 100%;
@@ -212,18 +235,18 @@ textarea, input {
   overflow: hidden;
 }
 
-/* line 195, ../sass/ie.scss */
+/* line 218, ../sass/ie.scss */
 .all-buttons, #send {
   margin-top: 40px;
   margin-bottom: 60px;
 }
 
-/* line 199, ../sass/ie.scss */
+/* line 222, ../sass/ie.scss */
 i {
   margin-right: 5px;
 }
 
-/* line 202, ../sass/ie.scss */
+/* line 225, ../sass/ie.scss */
 ::placeholder {
   color: silver;
   font-style: italic;
@@ -231,7 +254,7 @@ i {
   padding-left: 10px;
 }
 
-/* line 208, ../sass/ie.scss */
+/* line 231, ../sass/ie.scss */
 .contact-btn:hover {
   cursor: pointer;
   color: #45A29E;
@@ -240,42 +263,9 @@ i {
 
 /* xs < 768 */
 @media screen and (max-width: 767px) {
-  /* line 218, ../sass/ie.scss */
-  body {
-    font-size: 0.8em;
-  }
-
-  /* line 221, ../sass/ie.scss */
-  .box-scene {
-    margin-bottom: 200px;
-  }
-
-  /* line 224, ../sass/ie.scss */
-  .box-scene:hover .box {
-    -webkit-transform: none;
-  }
-
-  /* line 227, ../sass/ie.scss */
-  .side {
-    display: none;
-  }
-
-  /* line 230, ../sass/ie.scss */
-  .box {
-    width: 300px;
-    height: 300px;
-  }
-
-  /* line 234, ../sass/ie.scss */
-  a {
-    cursor: pointer;
-  }
-}
-/* sm */
-@media screen and (min-width: 768px) {
   /* line 241, ../sass/ie.scss */
   body {
-    font-size: 1em;
+    font-size: 0.8em;
   }
 
   /* line 244, ../sass/ie.scss */
@@ -284,73 +274,106 @@ i {
   }
 
   /* line 247, ../sass/ie.scss */
+  .box-scene:hover .box {
+    -webkit-transform: none;
+  }
+
+  /* line 250, ../sass/ie.scss */
+  .side {
+    display: none;
+  }
+
+  /* line 253, ../sass/ie.scss */
+  .box {
+    width: 300px;
+    height: 300px;
+  }
+
+  /* line 257, ../sass/ie.scss */
+  a {
+    cursor: pointer;
+  }
+}
+/* sm */
+@media screen and (min-width: 768px) {
+  /* line 264, ../sass/ie.scss */
+  body {
+    font-size: 1em;
+  }
+
+  /* line 267, ../sass/ie.scss */
+  .box-scene {
+    margin-bottom: 200px;
+  }
+
+  /* line 270, ../sass/ie.scss */
   .box {
     width: 200px;
     height: 200px;
   }
 
-  /* line 251, ../sass/ie.scss */
+  /* line 274, ../sass/ie.scss */
   .side {
     left: 200px;
   }
 
-  /* line 254, ../sass/ie.scss */
+  /* line 277, ../sass/ie.scss */
   .front, .side {
     font-size: 1em;
   }
 }
 /* md */
 @media screen and (min-width: 992px) {
-  /* line 261, ../sass/ie.scss */
+  /* line 284, ../sass/ie.scss */
   body {
     font-size: 1.2em;
   }
 
-  /* line 264, ../sass/ie.scss */
+  /* line 287, ../sass/ie.scss */
   .box-scene {
     margin-bottom: 100px;
   }
 
-  /* line 267, ../sass/ie.scss */
+  /* line 290, ../sass/ie.scss */
   .box {
     width: 250px;
     height: 250px;
   }
 
-  /* line 271, ../sass/ie.scss */
+  /* line 294, ../sass/ie.scss */
   .side {
     left: 250px;
   }
 
-  /* line 274, ../sass/ie.scss */
+  /* line 297, ../sass/ie.scss */
   .front, .side {
     font-size: 1em;
   }
 }
 /* lg */
 @media screen and (min-width: 1200px) {
-  /* line 281, ../sass/ie.scss */
+  /* line 304, ../sass/ie.scss */
   body {
     font-size: 1.3em;
   }
 
-  /* line 284, ../sass/ie.scss */
+  /* line 307, ../sass/ie.scss */
   .box-scene {
     margin-bottom: 100px;
   }
 
-  /* line 287, ../sass/ie.scss */
+  /* line 310, ../sass/ie.scss */
   .box {
     width: 250px;
     height: 250px;
   }
 
-  /* line 291, ../sass/ie.scss */
+  /* line 314, ../sass/ie.scss */
   .side {
     left: 250px;
   }
 
-  /* line 294, ../sass/ie.scss */
+  /* line 317, ../sass/ie.scss */
   .front, .side {
     font-size: 1em;
   }
