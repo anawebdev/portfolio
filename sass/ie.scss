@@ -11,7 +11,7 @@ $medium-grey: #1F2833;
 $light-pink: #C5C6C7;
 $bright-turqoise: #66FCF1;
 $medium-blue: #45A29E;
-$box-size: 200px;
+
 $shadow: rgba(0,0,0, 0.18);
 
 
@@ -83,7 +83,27 @@ h4 {
     color: $light-pink;
 }
 
-// MOVING BOXES
+// ABOUT ME SECTION
+
+p {
+    text-align: justify;
+    font-size: 0.8em;
+    margin-top:auto;
+    margin-bottom:auto;
+}
+
+.path {
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    animation: dash 10s linear forwards;
+}
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+// MOVING BOXES - PORTFOLIO
 
 .box-scene {
     -webkit-perspective: 700;

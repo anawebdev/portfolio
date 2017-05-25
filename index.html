@@ -3,6 +3,7 @@
         <head>
             <meta charset="UTF-8">
             <title>Portfolio</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
             <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
             <link rel="stylesheet" href="stylesheets/ie.css">
             <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
@@ -11,11 +12,25 @@
             <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
             <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
             <script> AOS.init(); </script>
-                
-            </script>
-            <meta name="viewport" content="width=device-width, initial-scale=1">
         </head>
         <body>
+
+<!-- STILL TO DO 
+
+1. connect form to server
+2. add animation to text
+3. add animation to self drawing image
+4. add nav bar
+5. add landing page
+6.style more form text
+7.style headers
+8. floating scroll icon
+9. smooth scroll when jumping between section
+10. home button?
+
+-->
+
+<!-- LANDING PAGE -->
 
             <div id="landingPage" class="container-fluid">
                 <h1>Landing Page</h1>
@@ -23,11 +38,66 @@
                 </div>
             </div>
 
+<!-- ABOUT ME -->
+
             <div id="aboutMe" class="container-fluid">
                 <h2>About Me</h2>
-                <div class="row">  
+                <div class="row">
+                    
+                    <div class="col-md-5">
+                        <p    data-aos="fade-in" data-aos-offset="100" data-aos-easing="ease-in" data-aos-duration="800">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pulvinar sit amet nisi id aliquet. Morbi dignissim, turpis non placerat lobortis, sem dolor vestibulum ipsum, at cursus tellus purus non massa. Sed in ligula posuere, facilisis quam ac, tempor risus. Aliquam vel elementum dolor. Nunc placerat enim nec tortor malesuada, non eleifend ex rutrum. Aliquam ante sem, mollis sed urna in, consectetur convallis odio. Proin ornare finibus ante, et tempus lorem facilisis sit amet.
+                        </p>
+                        <br>
+                        <p    data-aos="fade-in" data-aos-offset="200" data-aos-easing="ease-in" data-aos-duration="800">
+                            Donec interdum tempor varius. Interdum et malesuada fames ac ante ipsum primis in faucibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed dapibus nisi sem, eget convallis sapien molestie at. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras congue nulla enim, at consequat eros tincidunt in. Nulla facilisi.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <svg id="skyline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="2px" y="2px"
+                                viewBox="0 0 700.1 300" enable-background="new 0 0 700.1 300" xml:space="preserve">
+                            <path fill-rule="evenodd" 
+                                  clip-rule="evenodd" 
+                                  class= "path"
+                                  fill="none"  
+                                  stroke="white"  
+                                  stroke-width="0.5"
+                                  stroke-linecap="round" 
+                                  d="M62,205h32v11h15v-10h17v-4h30v5h9v44h5v7h5v-7h5v-15h5v-84h24v89h8v9
+                                h8v-37h4v-4h3l9-50l9,37h19v51h17v-6h8v-10h16v-7h16v19h9v13h8v-3h15v4h7l4,9v8h5v-9h7v7h12V119h7v-17h5V87l15-82l13,81v14h4v19h4
+                                v121h7v-4h8v4h12v-5h15v-6h10v11h9v-66h8v5h34v-10h37v6h14c0,83,0,84,0,84h30"/>
+                            </svg>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="row"  data-aos="fade-in" data-aos-offset="100" data-aos-easing="ease-in" data-aos-duration="800">
+                     
+                    <div class="col-md-6">
+                            <svg id="skyline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="2px" y="2px"
+                                viewBox="0 0 700.1 300" enable-background="new 0 0 700.1 300" xml:space="preserve">
+                            <path fill-rule="evenodd" 
+                                  clip-rule="evenodd" 
+                                  class="path"
+                                  fill="none"  
+                                  stroke="white"  
+                                  stroke-width="0.5"
+                                  stroke-linecap="round" 
+                                  d="M62,205h32v11h15v-10h17v-4h30v5h9v44h5v7h5v-7h5v-15h5v-84h24v89h8v9
+                                h8v-37h4v-4h3l9-50l9,37h19v51h17v-6h8v-10h16v-7h16v19h9v13h8v-3h15v4h7l4,9v8h5v-9h7v7h12V119h7v-17h5V87l15-82l13,81v14h4v19h4
+                                v121h7v-4h8v4h12v-5h15v-6h10v11h9v-66h8v5h34v-10h37v6h14c0,83,0,84,0,84h30"/>
+                            </svg>
+                    </div>
+                            
+                    <div class="col-md-5">
+                        <p>
+                            Nullam lorem nisi, sodales sed dui vel, ultrices commodo mi. Quisque sed egestas tellus. Nullam vel egestas ex, eu elementum magna. Sed purus nulla, mollis ut lectus quis, ultrices luctus massa. Vestibulum quis aliquet mauris. Aliquam sagittis id justo eget finibus. Etiam egestas sapien libero, a blandit urna commodo eu. In facilisis ipsum volutpat libero porttitor consequat.
+                        </p>
+                    </div>
                 </div>
             </div>
+
+<!-- SKILLS SECTION -->
 
             <div id="skills" class="container-fluid">
                 <h2>Skills</h2>
