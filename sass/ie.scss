@@ -90,17 +90,31 @@ p {
     font-size: 0.8em;
     margin-top:auto;
     margin-bottom:auto;
+    padding: 0px 8px 0 8px;
 }
 
 .path {
     stroke-dasharray: 2000;
     stroke-dashoffset: 2000;
     animation: dash 10s linear forwards;
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation-iteration-count: infinite;
+}
+.path-laptop {
+    stroke-dasharray: 3000;
+    stroke-dashoffset: 2780;
+    animation: dash 10s linear forwards;
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation-iteration-count: infinite;
 }
 @keyframes dash {
     to {
         stroke-dashoffset: 0;
     }
+}
+
+#laptop {
+    margin-left:20px;
 }
 
 // MOVING BOXES - PORTFOLIO
@@ -169,13 +183,18 @@ textarea, input {
     box-shadow: 3px 3px 5px $shadow;
 }
 .contact-btn {
-    margin: 20px 5px 40px 5px;
+    margin: 5px;
     width: 100%;
     background: $medium-blue;
     border: 3px solid white;
     border-radius: 0;
     color: white;
     text-align: center;
+    overflow: hidden;
+}
+.all-buttons, #send {
+    margin-top:40px;
+    margin-bottom:60px;
 }
 i {
     margin-right: 5px;
