@@ -119,25 +119,13 @@ p {
 
 // SKILLLS
 
-.skill {
-    width: 100%;
-    background: $medium-grey;
-
-    h6 {
-        padding: 15px 0 15px 0;
+#skills {
+    img {
+        border: 3px solid white;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
-
-    p {
-        font-size: 0.7em;
-        padding-bottom: 10px;
-    }
-}
-
-.skill-line {
-    width: 100%;
-    margin-top:20px;
-    text-align: center;
-    padding: 10px;
 }
 
 // MOVING BOXES - PORTFOLIO
@@ -256,7 +244,11 @@ i {
     }
     a {
     cursor: pointer;
-}
+    }
+    #skills img {
+        width: 50%;
+        margin-left: 25%;
+    }
 }
 
 /* sm */
