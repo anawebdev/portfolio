@@ -1,1 +1,3 @@
-console.log("Hello javascript!");
+AOS.init();
+
+console.log("nlkddlkv");
