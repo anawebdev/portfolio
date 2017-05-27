@@ -10,16 +10,16 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css" />
             <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+            <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
         </head>
+
         <body>
 
 <!-- STILL TO DO 
 
 1. connect form to server
-2. add animation to text
-3. add animation to self drawing image
 4. add nav bar
-5. add landing page
+5. style landing page
 6.style more form text
 7.style headers
 8. floating scroll icon
@@ -31,10 +31,23 @@
 <!-- LANDING PAGE -->
 
             <div id="landingPage" class="container-fluid">
-                <h1>Landing Page</h1>
-                <div class="row">  
+                <div class="row">
+                    
+                    <div class="col-md-12">
+                        
+                        <div id="particle-canvas">
+                            <div class="border">
+                                <h1 id="welcome">Hey there!</h1>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    
                 </div>
-            </div>
+                
+
+           </div>
 
 <!-- ABOUT ME -->
 
@@ -105,42 +118,42 @@
                 <br>
                 <br>
                 <div class="row container-fluid">
-                    <div class="col-md-1">
+                    <div class="col-md-3">
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-1">
                         <img class="img-fluid"  src="./images/html.png" />
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-1">
                         <img class="img-fluid"  src="./images/css.png" />
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-1">
                         <img class="img-fluid"  src="./images/js.png" />
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-1">
                         <img class="img-fluid"  src="./images/jquery.png" />
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-1">
                         <img class="img-fluid"  src="./images/bootstrap.png" />
                     </div>
-                    <div class="col-md-1">
+                    <div class="col-md-3">
                     </div>
                 </div>
                 <div class="row container-fluid">
-                    <div class="col-md-1">
+                    <div class="col-md-3">
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-1">
                         <img class="img-fluid"  src="./images/sass.png" />
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-1">
                         <img class="img-fluid"  src="./images/react.png" />
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-1">
                         <img class="img-fluid"  src="./images/node.png" />
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-1">
                         <img class="img-fluid"  src="./images/git.png" />
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-1">
                         <img class="img-fluid"  src="./images/ps.png" />
                     </div>
                     <div class="col-md-1">
@@ -359,7 +372,12 @@
             
             
             <script type="text/javascript" rel="stylesheet" src="./js/scripts.js"></script>
+            <script type="text/javascript" src="./canvas-particle-network/particle-network.min.js"></script>
         </body>
         <footer>
         </footer>
     </html>
+
+
+
+		
