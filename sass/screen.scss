@@ -4,3 +4,400 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+
+//Color scheme
+
+$dark-grey: #0B0C10;
+$medium-grey: #1F2833;
+$light-pink: #C5C6C7;
+$bright-turqoise: #66FCF1;
+$medium-blue: #45A29E;
+
+$shadow: rgba(0,0,0, 0.18);
+
+#welcome {
+  position: absolute;
+  z-index: 999;
+  left: 40%;
+  top: 50%;
+  color: white;
+}
+//BACK TO TOP BUTTON 
+#top {
+    color: white;
+    font-size: 2.5em;
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+    z-index: 999;
+    text-align: center;
+}
+.hide {
+    visibility: hidden;
+}
+.show {
+    visibility: visible;
+}
+//NAV BAR
+
+nav {
+    position: absolute;
+    z-index: 999;
+    border-bottom: 1px solid $medium-grey;
+    width: 100%;
+    background: $dark-grey;
+}
+
+ul li {
+    display: inline-block;
+    float: right;
+}
+li a {      
+    display: block;
+    padding: 16px 20px;
+}
+li a:hover {
+    border: 1px solid $medium-grey;
+}
+
+//NAB BAR END
+.border {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+    border: 0.5px solid $medium-grey;
+    z-index: 999;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+img {
+    margin-bottom: 20px;
+}
+
+h2 {
+    padding: 20px 0 20px 0;
+}
+h4 {
+    text-align: center;
+    padding: 20px 10px 0px 10px;
+}
+.btn {
+    white-space: normal;
+}
+.access-btn {
+    text-align: center;
+    border: 2px solid white;
+    padding: 5px;
+    background: none;
+    color: white;
+    border-radius: 0;
+    margin: 0 auto;
+    width:50%;
+    margin-left: 25%;
+    height: 20%;
+    margin-top: 20%;
+}
+.access-btn:hover {
+    color: $dark-grey;
+    background: white;
+    cursor: pointer;
+    font-weight: 700px;
+}
+#projects a {
+    cursor: default;
+}
+
+#landingPage {
+    height: 100%;
+    width: 100%;
+    color: light-pink;
+    background: $dark-grey;  /* fallback for old browsers */
+
+}
+
+#aboutMe {
+    background: $medium-grey;
+    color: $light-pink;
+}
+
+#skills {
+    background: $medium-blue;
+    color: $light-pink;
+}
+
+#projects {
+    background: $dark-grey;
+    color: $light-pink;
+}
+
+#contact {
+    background: $medium-blue;
+    color: $light-pink;
+}
+
+.canvas-wrap {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+// ABOUT ME SECTION
+
+p {
+    text-align: justify;
+    font-size: 0.8em;
+    margin-top:auto;
+    margin-bottom:auto;
+    padding: 0px 8px 0 8px;
+}
+
+.path {
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    -webkit-animation:  dash 10s linear forwards;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-name: dash;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    animation: dash 10s linear forwards;
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation-iteration-count: infinite;
+}
+.path-laptop {
+    stroke-dasharray: 3000;
+    stroke-dashoffset: 2780;
+    -webkit-animation: dash 10s linear forwards;
+    animation: dash 10s linear forwards;
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation-iteration-count: infinite;
+}
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-webkit-keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@-o-keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+#laptop {
+    margin-left:20px;
+}
+
+
+#particle-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+
+// SKILLLS
+
+#skills {
+    img {
+        border: 3px solid white;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+// MOVING BOXES - PORTFOLIO
+
+.box-scene {
+    -webkit-perspective: 700;
+    width: 400px;
+    height: 200px;
+    margin:auto;
+    z-index: 999;
+}
+.box-scene:hover .box {
+    -webkit-transform: rotateY(-90deg);
+}
+.box {
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: all  0.8s ease-out;
+    -webkit-transform-origin: 90px 90px -90px;
+    
+    /* float: left; */
+    margin: 30px auto;  
+
+    //animations
+
+}
+
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 3px white solid;
+    -webkit-backface-visibility: visible; 
+    
+    -webkit-transform-origin: 0 0;
+}
+.front {
+    margin-bottom:100px;
+    background: $dark-grey;
+    -webkit-transform: rotateY(0deg);
+    z-index: 2;
+}
+.side {
+    margin-bottom:100px;
+    background:$dark-grey;
+    -webkit-transform: rotateY(90deg);
+    z-index: 1;
+}
+.box-scene {
+    max-width: 100%;
+}
+
+// CONTACT SECTION 
+
+form{
+    width: 100%;
+}
+textarea {
+    height: 5em;
+}
+textarea, input {
+    width: 100%;
+    padding: 5px;
+    background: white;
+    border:3px solid white;
+    box-shadow: 3px 3px 5px $shadow;
+}
+.contact-btn {
+    margin: 5px;
+    width: 100%;
+    background: $medium-blue;
+    border: 3px solid white;
+    border-radius: 0;
+    color: white;
+    text-align: center;
+}
+.all-buttons, #send {
+    margin-top:40px;
+    margin-bottom:60px;
+}
+i {
+    margin-right: 5px;
+}
+::placeholder {
+    color:silver;
+    font-style: italic;
+    font-size:0.8em;
+    padding-left: 10px;
+}
+.contact-btn:hover {
+    cursor: pointer;
+    color: $medium-blue;
+    background: white;
+    }
+
+//MEDIA QUERIES
+
+/* xs < 768 */
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 0.8em;
+    }
+    .box-scene {
+        margin-bottom:200px;
+    }
+    .box-scene:hover .box {
+        -webkit-transform: none;
+}
+    .side {
+        display: none;
+    }
+    .box {
+        width:300px;
+        height: 300px;
+    }
+    a {
+    cursor: pointer;
+    }
+    #skills img {
+        width: 30%;
+        margin-left: 35%;
+    }
+}
+
+/* sm */
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 1em;
+    }
+   .box-scene {
+        margin-bottom:200px;
+    }
+    .box {
+        width:200px;
+        height: 200px;
+    }
+    .side {
+        left: 200px;
+    }
+    .front,.side {
+        font-size: 1em;
+    }
+}
+
+/* md */
+@media screen and (min-width: 992px) {
+    body {
+        font-size: 1.2em;
+    }
+   .box-scene {
+            margin-bottom:100px;
+             }
+    .box {
+        width:250px;
+        height: 250px;
+    }
+    .side {
+        left: 250px;
+    }
+    .front,.side {
+        font-size: 1em;
+    }
+}
+
+/* lg */
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 1.3em;
+    }
+    .box-scene {
+        margin-bottom:100px;
+    }
+    .box {
+        width:250px;
+        height: 250px;
+    }
+    .side {
+        left: 250px;
+    }
+    .front,.side {
+        font-size: 1em;
+    }
+
+}
+

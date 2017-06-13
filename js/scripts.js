@@ -4,7 +4,6 @@ $(document).ready(function(){
     AOS.init();
 
 //animates skyline and laptop in IE
-
 var p = document.querySelector('.path'), 
 offset = 2000;
 var q = document.querySelector('.path-laptop'), 
@@ -40,7 +39,20 @@ var options = {
 var particleCanvas = new ParticleNetwork(document.getElementById('particle-canvas'), options);
 
 var canvas = document.getElementById("my-canvas");
-var context = canvas.getContext("2d");
+//var context = canvas.getContext("2d");
 
+// SCROLL TO TOP
+
+$(document).scroll(function() {
+  if ($(document).scrollTop() >= 50) {
+    $("#top").addClass('show');
+  } else {
+    $("#top").removeClass('show');
+    }
+});
+
+$('#top').on('click',function () {
+  $('#top').removeClass('show');
+});
 
 });

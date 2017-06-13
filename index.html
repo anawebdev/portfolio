@@ -6,7 +6,7 @@
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>          
             <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
-            <link rel="stylesheet" href="stylesheets/ie.css">
+            <link href="./stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css" />
             <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
@@ -28,25 +28,34 @@
 
 -->
 
+<!-- BACK TO TOP BUTTON -->
+
+<a href="#landingPage" class="hide">
+    <i  class="fa fa-arrow-circle-up"  id='top' aria-hidden="true"></i>
+</a>
+
 <!-- LANDING PAGE -->
 
             <div id="landingPage" class="container-fluid">
                 <div class="row">
-                    
+                    <nav>
+                        <ul>
+                            <li><a href='#contact'>Contact</a></li>
+                            <li><a href='#projects'>Projects</a></li>
+                            <li><a href='#skills'>Skills</a></li>
+                            <li><a href='#aboutMe'>About me</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="row">
                     <div class="col-md-12">
-                        
                         <div id="particle-canvas">
                             <div class="border">
                                 <h1 id="welcome">Hey there!</h1>
                             </div>
-                            
                         </div>
-                        
                     </div>
-                    
                 </div>
-                
-
            </div>
 
 <!-- ABOUT ME -->
@@ -344,7 +353,7 @@
                         <a href="https://www.freecodecamp.com/anawebdev" target="_blank">
                         <button class="btn  contact-btn" id="fcc">
                             <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-                            FreeCodeCamp
+                            Free Code Camp
                         </button>
                         </a>
                     </div>
