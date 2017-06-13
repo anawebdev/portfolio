@@ -1,0 +1,3 @@
+{
+  "props": ["ParticleNetwork", "exports", "options", "particleColor", "background", "interactive", "speed", "velocity", "density"]
+}
