@@ -11,22 +11,12 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css" />
             <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
             <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+            <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         </head>
 
         <body>
-
-<!-- STILL TO DO 
-
-1. connect form to server
-4. add nav bar
-5. style landing page
-6.style more form text
-7.style headers
-8. floating scroll icon
-9. smooth scroll when jumping between section
-10. home button?
-
--->
 
 <!-- BACK TO TOP BUTTON -->
 
@@ -40,18 +30,28 @@
                 <div class="row">
                     <nav>
                         <ul>
-                            <li><a href='#contact'>Contact</a></li>
-                            <li><a href='#projects'>Projects</a></li>
-                            <li><a href='#skills'>Skills</a></li>
-                            <li><a href='#aboutMe'>About me</a></li>
+                            <li><a href='#contact'>CONTACT</a></li>
+                            <li><a href='#projects'>PROJECTS</a></li>
+                            <li><a href='#skills'>SKILLS</a></li>
+                            <li><a href='#aboutMe'>ABOUT ME</a></li>
                         </ul>
                     </nav>
                 </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div id="particle-canvas">
-                            <div class="border">
-                                <h1 id="welcome">Hey there!</h1>
+
+                <div class="landingContainer">
+                    <h1>HELLO</h1>
+                    <p>Are you looking for a newbie developer who loves learning, is adaptabale and would never back down from a good challenge?</p> 
+                    <br>
+                    <p class="intro">If so, you're in the right place.</p>
+                    <br>
+                    <br>
+                    <a href="#aboutMe"><button class="readMore btn">READ MORE</button></a>
+                </div>
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="particle-canvas">
                             </div>
                         </div>
                     </div>
@@ -61,7 +61,7 @@
 <!-- ABOUT ME -->
 
             <div id="aboutMe" class="container-fluid">
-                <h2>About Me</h2>
+                <h1>About Me</h1>
                 <div class="row">
                     <div class="col-md-1">
                     </div>
@@ -123,11 +123,11 @@
 <!-- SKILLS SECTION -->
 
             <div id="skills" class="container-fluid">
-                <h2>Skills</h2>
-                <br>
-                <br>
+                <h1>Skills</h1>
                 <div class="row container-fluid">
                     <div class="col-md-3">
+                    </div>
+                    <div class="col-md-half">
                     </div>
                     <div class="col-md-1">
                         <img class="img-fluid"  src="./images/html.png" />
@@ -149,6 +149,8 @@
                 </div>
                 <div class="row container-fluid">
                     <div class="col-md-3">
+                    </div>
+                    <div class="col-md-half">
                     </div>
                     <div class="col-md-1">
                         <img class="img-fluid"  src="./images/sass.png" />
@@ -175,7 +177,7 @@
 <!-- PROJECTS SECTION -->
 
             <div id="projects" class="container-fluid">
-                <h2>Projects</h2>
+                <h1>Projects</h1>
 
                 <div class="row box-row">
 
@@ -316,7 +318,7 @@
 <!-- CONTACT SECTION -->            
 
             <div id="contact" class="container-fluid">
-                <h2>Contact</h2>
+                <h1>Contact</h1>
                 <div class="row">
                     <div class="col-md-2">
                         </div>
