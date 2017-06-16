@@ -33,7 +33,7 @@
 **Debugging**
 
 - the website passes the HTML validation tests on https://validator.w3.org/
-- the website passes the CSS validation tests with the exception of vendor prefixes and stroke-dash-array and dash-offset
+- the website passes the CSS validation tests with the exception of vendor prefixes and stroke-dasharray and stroke-dash-offset
 
 **How to improve**
 
@@ -41,5 +41,5 @@
 -   performance: by minifying files
 -   cross browser compatibility: by adding a deparate stylesheet for IE and Safari
 -   IE does not display properly the "Projects" section/animations
--   Safari does not display animations and content
+-   Safari does not display animations and some content
 -   appearance: changing the order in which columns display after reachin their breakpoints might improve UX on mobile

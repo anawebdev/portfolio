@@ -74,7 +74,6 @@ li a {
     text-decoration: none;
     text-align: center;
     }      
-
 li a:hover {
     text-decoration: none;
     border: 1px solid $medium-grey;
@@ -124,7 +123,7 @@ h4 {
     color: $dark-grey;
     background: white;
     cursor: pointer;
-    font-weight: 700px;
+    font-weight: 700;
 }
 
 #projects a {
@@ -294,8 +293,7 @@ p {
         stroke-dashoffset: 0;
     }
 }
-
-@-webkit-keyframes dash {
+@-moz-keyframes dash {
     to {
         stroke-dashoffset: 0;
     }
@@ -448,7 +446,6 @@ textarea, input {
 i {
     margin-right: 5px;
 }
-
 ::-webkit-input-placeholder {
     color:silver;
     font-style: italic;
