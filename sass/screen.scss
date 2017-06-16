@@ -18,6 +18,9 @@ body, html {
     height: 100%;
     width: 100%;
 }
+span {
+  //  font-family: 'Open Sans', sans-serif;
+}
 
 //BACK TO TOP BUTTON 
 
@@ -102,6 +105,7 @@ h4 {
     margin-left: 25%;
     height: 20%;
     margin-top: 20%;
+    font-family: 'Open Sans', sans-serif;
 }
 .access-btn:hover {
     color: $dark-grey;
@@ -166,7 +170,7 @@ h4 {
         text-decoration: none;
         color: $light-pink;
     }
-    button:hover {
+    span:hover {
         font-weight: 700;
         cursor: pointer;
         color: white;
@@ -418,6 +422,7 @@ textarea, input {
     border-radius: 0;
     color: white;
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
 }
 .all-buttons, #send {
     margin-top:40px;
