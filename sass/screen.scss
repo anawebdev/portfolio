@@ -19,7 +19,10 @@ body, html {
     width: 100%;
 }
 span {
-  //  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  padding:10px;
+  text-align: center;
+  vertical-align: middle;
 }
 
 //BACK TO TOP BUTTON 
@@ -415,6 +418,9 @@ textarea, input {
     box-shadow: 3px 3px 5px $shadow;
 }
 .contact-btn {
+    position: relative;
+    text-align: center;
+    background: pink;
     margin: 5px;
     width: 100%;
     background: $medium-blue;
