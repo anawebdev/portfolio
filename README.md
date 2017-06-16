@@ -30,6 +30,10 @@
 
 -	cross browser compatibility is achieved using vendor prefixes and separate stylesheets for IE and Safari
 
+**Debugging**
+
+- the page fully passes the validation test on https://validator.w3.org
+
 **How to improve**
 
--	responsiveness: by using browser cache
+-	performance: by using browser cache

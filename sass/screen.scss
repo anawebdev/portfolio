@@ -64,10 +64,8 @@ li a {
     display: block;
     padding: 18px 30px;
     color: $light-pink;
-    text {
-        decoration: none;
-        align: center;
-    }      
+    text-decoration: none;
+    text-align: center;     
 }
 li a:hover {
     text-decoration: none;
@@ -114,7 +112,7 @@ h4 {
     color: $dark-grey;
     background: white;
     cursor: pointer;
-    font-weight: 700px;
+    font-weight: 700;
 }
 #projects a {
     cursor: default;
@@ -125,7 +123,7 @@ h4 {
 #landingPage {
     height: 100%;
     width: 100%;
-    color: light-pink;
+    color: $light-pink;
     background: $dark-grey;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -216,11 +214,8 @@ p {
     margin-bottom:auto;
     padding: 0px 8px 0 8px;
     line-height: 140%;
-    font {
-        family: 'Open Sans', sans-serif;
-        size: 0.8em;
-    }
-
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;
 }
 
 .path {
@@ -276,13 +271,14 @@ p {
   -o-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
-@keyframes dash {
+
+
+@-webkit-keyframes dash {
     to {
         stroke-dashoffset: 0;
     }
 }
-
-@-webkit-keyframes dash {
+@-moz-keyframes dash {
     to {
         stroke-dashoffset: 0;
     }
@@ -292,7 +288,11 @@ p {
         stroke-dashoffset: 0;
     }
 }
-
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
 
 #laptop {
     margin-left:20px;
@@ -437,13 +437,35 @@ textarea, input {
 i {
     margin-right: 5px;
 }
+::-webkit-input-placeholder {
+    color:silver;
+    font-style: italic;
+    font-size: 0.8em;
+    padding: 10px;
+}
+::-moz-placeholder {
+    color:silver;
+    font-style: italic;
+    font-size: 0.8em;
+    padding: 10px;
+}
+:-moz-placeholder {
+    color:silver;
+    font-style: italic;
+    font-size: 0.8em;
+    padding: 10px;
+}
+:-ms-input-placeholder {
+    color:silver;
+    font-style: italic;
+    font-size: 0.8em;
+    padding: 10px;
+}
 ::placeholder {
     color:silver;
-    font {
-        style: italic;
-        size: 0.8em;
-    }
-    padding-left: 10px;
+    font-style: italic;
+    font-size: 0.8em;
+    padding: 8px;
 }
 .contact-btn:hover {
     cursor: pointer;
