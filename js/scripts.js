@@ -31,7 +31,7 @@ offsetLap();
 
 var options = {
 	particleColor: '#4e627a',
-	background: '#0B0C10',
+	background: './images/transparent.png',
 	interactive: true,
 	speed: 'slow',
 	density: 'medium'

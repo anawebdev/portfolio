@@ -13,11 +13,13 @@ $shadow: rgba(0,0,0, 0.18);
 //GENERAL 
 
 body, html {
+    background: $dark-grey;
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
 }
+
 span {
   font-family: 'Open Sans', sans-serif;
   padding:10px;
@@ -35,9 +37,11 @@ span {
     color: white;
     font-size: 2.5em;
 }
+
 .hide {
     visibility: hidden;
 }
+
 .show {
     visibility: visible;
 }
@@ -50,6 +54,7 @@ nav {
     z-index: 999;
     border-bottom: 1px solid $medium-grey;
 }
+
 ul {
     list-style-type: none;
     margin: 0 20px 0 0 ;
@@ -57,18 +62,19 @@ ul {
     overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 li {
     float: right;
 }
+
 li a { 
     display: block;
     padding: 18px 30px;
     color: $light-pink;
-    text {
-        decoration: none;
-        align: center;
+    text-decoration: none;
+    text-align: center;
     }      
-}
+
 li a:hover {
     text-decoration: none;
     border: 1px solid $medium-grey;
@@ -89,13 +95,16 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-variant: small-caps;
 }
+
 h4 {
     text-align: center;
     padding: 20px 10px 0px 10px;
 }
+
 .btn {
     white-space: normal;
 }
+
 .access-btn {
     text-align: center;
     border: 2px solid white;
@@ -110,75 +119,80 @@ h4 {
     margin-top: 20%;
     font-family: 'Open Sans', sans-serif;
 }
+
 .access-btn:hover {
     color: $dark-grey;
     background: white;
     cursor: pointer;
     font-weight: 700px;
 }
+
 #projects a {
     cursor: default;
 }
 
-//LANDING PAGE
-
-#landingPage {
+#particle-canvas {
+    position: absolute!important;
     height: 100%;
     width: 100%;
-    color: light-pink;
-    background: $dark-grey;
+    z-index: 100!important;
+    top: 0!important;
+    left: 0;
+}
+
+//LANDING PAGE
+
+.canvas-container{
+     width: 100%;
+     z-index: 2;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+#landingPage {
+    min-height: 100vh;
+    width: 100%;
+    color: $light-pink;
     font-family: Arial, Helvetica, sans-serif;
 }
-.landingContainer {
-    position: absolute;
-    z-index: 99;
-    height: 100vh;
-    width: 70%;
-    left: 15%;
-    padding: 10%;
-    color: $light-pink;
+
+.text-container {
+    display: table;
+    width: 100%;
+    margin: 100px auto 60px auto;
+    padding: 50px;
+}
+
+.inner-wrap {
+    display: table-row;
     text-align: center;
-    @media screen and (max-width: 992px) {
-        width: 100%;
-        left: 0;
-        padding: 60px 10px 10px 10px;
-    }
-    p {
-        text-align: justify;
-        font-family: Arial, Helvetica, sans-serif;
-        font-variant: small-caps;
-        font-size: 1.3em;
-    }
+    font-size: 1.5em;
+    font-variant: small-caps;
+    color: $light-pink;
     h1 {
+        font-size: 2.5em;
+        letter-spacing: 0.27em;
         font-weight: 700;
-        text-align: center;
-        font-size: 4em;
-        padding-top: 100px;
     }
-    .intro {
-        text-align: center;
-    }
-    .readMore{
-        width:30%;
-        padding: 5px;
-        position: relative;
-        background: none;
-        border: 3px solid $light-pink;
-        color: $light-pink;
-        @media screen and (max-width: 992px) {
-        width: 100%;
-    }
-    }
-    a, a:link, a:active {
-        text-decoration: none;
-        color: $light-pink;
-    }
-    span:hover {
-        font-weight: 700;
-        cursor: pointer;
-        color: white;
-        border: white 3px solid;
-    }
+}
+
+.readMore {
+    position: relative!important;
+    z-index: 999!important;
+    border: solid 1px $light-pink;
+    border-radius: 0;
+    padding: 10px 35px;
+}
+
+.readMore:hover {
+    font-weight: 900;
+    color: $dark-grey;
+    background:$light-pink;
+}
+
+.readMore, .readMore:link, .readMore:active {
+    color:$light-pink;
+    text-decoration: none;
 }
 
 //ABOUT ME
@@ -216,12 +230,9 @@ p {
     margin-bottom:auto;
     padding: 0px 8px 0 8px;
     line-height: 140%;
-    font {
-        family: 'Open Sans', sans-serif;
-        size: 0.8em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;
     }
-
-}
 
 .path {
   stroke-dasharray: 2000;
@@ -262,6 +273,7 @@ p {
   -o-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
+
 .path-laptop {
   stroke-dasharray: 3000;
   stroke-dashoffset: 2780;
@@ -276,6 +288,7 @@ p {
   -o-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
+
 @keyframes dash {
     to {
         stroke-dashoffset: 0;
@@ -293,18 +306,9 @@ p {
     }
 }
 
-
 #laptop {
     margin-left:20px;
 }
-
-
-#particle-canvas {
-  width: 100%;
-  height: 100%;
-  height: 100vh;
-}
-
 
 // SKILLLS
 
@@ -322,6 +326,7 @@ p {
 }
 
 // MOVING BOXES - PORTFOLIO
+
 .box-scene {
   -webkit-perspective: 700px;
   -moz-perspective: 700px;
@@ -402,14 +407,17 @@ p {
   transform: rotateY(90deg);
   z-index: 1;
 }
+
 // CONTACT SECTION 
 
 form{
     width: 100%;
 }
+
 textarea {
     height: 5em;
 }
+
 textarea, input {
     width: 100%;
     padding: 5px;
@@ -417,6 +425,7 @@ textarea, input {
     border:3px solid white;
     box-shadow: 3px 3px 5px $shadow;
 }
+
 .contact-btn {
     position: relative;
     text-align: center;
@@ -430,21 +439,58 @@ textarea, input {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
 }
+
 .all-buttons, #send {
     margin-top:40px;
     margin-bottom:60px;
 }
+
 i {
     margin-right: 5px;
 }
+
+::-webkit-input-placeholder {
+    color:silver;
+    font-style: italic;
+    font-size: 0.8em;
+    padding: 8px;
+}
+
+::-moz-placeholder {
+    color:silver;
+    font-style: italic;
+    font-size: 0.8em;
+    padding: 8px;
+}
+
+:-moz-placeholder {
+    color:silver;
+    font-style: italic;
+    font-size: 0.8em;
+    padding: 8px;
+}
+
+:-ms-input-placeholder {
+    color:silver;
+    font-style: italic;
+    font-size: 0.8em;
+    padding: 8px;
+}
+
+:-moz-placeholder {
+    color:silver;
+    font-style: italic;
+    font-size: 0.8em;
+    padding: 8px;
+}
+
 ::placeholder {
     color:silver;
-    font {
-        style: italic;
-        size: 0.8em;
-    }
-    padding-left: 10px;
+    font-style: italic;
+    font-size: 0.8em;
+    padding: 8px;
 }
+
 .contact-btn:hover {
     cursor: pointer;
     color: $medium-blue;
