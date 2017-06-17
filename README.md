@@ -20,15 +20,7 @@
 
 **Cross-browser compatibility**
 
-|Chrome	    |IE	            |Opera	    |Firefox	|Safari	    |
-|-----------|:-------------:|:---------:|:---------:|:---------:|
-|59.0.3071	|Microsoft Edge	|Opera 45	|44.0.	    |Safari 5	|
-|58.0.3029	|IE 11      	|Opera 44	|43.0	    |Safari 4	|
-|57.0.2987	|IE 10          |Opera 43	|42.0	    |Safari 3	|
-|56.0.2924	|IE 9	        |Opera 42	|41.0		|           |
-|55.0.2883	|    	        |Opera 41	|40.0		|           |
-
--	cross browser compatibility is achieved using vendor prefixes and separate stylesheets for IE and Safari
+-	cross browser compatibility is achieved using vendor prefixes and minor hacks that target a certain browser
 
 **Debugging**
 
@@ -37,10 +29,10 @@
 
 **How to improve**
 
--	performance: by using browser cache
+-	  performance: by using browser cache
 -   performance: by minifying files
 -   cross browser compatibility: by adding a deparate stylesheet for IE and Safari
 -   IE does not display properly the "Projects" section/animations
--   Safari does not display animations and some content
--   appearance: changing the order in which columns display after reachin their breakpoints might improve UX on mobile
+-   Safari does not display path animations correctly and the canvas particle network library
+-   appearance: changing the order in which columns display after reaching their breakpoints might improve UX on mobile
 
