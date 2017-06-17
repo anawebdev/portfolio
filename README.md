@@ -29,7 +29,7 @@
 
 **How to improve**
 
--	  performance: by using browser cache
+-   performance: by using browser cache
 -   performance: by minifying files
 -   cross browser compatibility: by adding a deparate stylesheet for IE and Safari
 -   IE does not display properly the "Projects" section/animations
