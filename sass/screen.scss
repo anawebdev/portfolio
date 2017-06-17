@@ -273,6 +273,10 @@ p {
   animation-iteration-count: infinite;
 }
 
+.path :not(:root:root) { 
+    stroke-dasharray: none; 
+    }
+
 .path-laptop {
   stroke-dasharray: 3000;
   stroke-dashoffset: 2780;
@@ -287,6 +291,25 @@ p {
   -o-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
+
+// Block path animations in Safari
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+
+    ::i-block-chrome, .path, .path-laptop{
+        stroke-dasharray: 0;
+    } 
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+
+    ::i-block-chrome, .col-md-5{
+        padding: 0;
+        margin: 0;
+        background: green;
+    } 
+}
+
 
 @keyframes dash {
     to {
@@ -337,6 +360,15 @@ p {
   z-index: 999;
   max-width: 100%;
   max-height: 100%;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+
+    ::i-block-chrome, .box-scene{
+        padding-top: 50px;
+        height: 400px;
+        color: white;
+    } 
 }
 
 .box-scene:hover .box {
@@ -404,6 +436,28 @@ p {
   -o-transform: rotateY(90deg);
   transform: rotateY(90deg);
   z-index: 1;
+}
+
+// Disabled box animation for IE (10+)
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+     .box-scene {
+    -webkit-perspective: 700px;
+    -ms-perspective: 700px;
+    perspective: 700px;
+    width: 400px;
+    height: 200px;
+    margin: auto;
+    z-index: 999;
+    max-width: 100%;
+    max-height: 100%;
+    }
+
+    .box-scene:hover .box {
+        -webkit-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+    }
 }
 
 // CONTACT SECTION 

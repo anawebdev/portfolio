@@ -43,3 +43,4 @@
 -   IE does not display properly the "Projects" section/animations
 -   Safari does not display animations and some content
 -   appearance: changing the order in which columns display after reachin their breakpoints might improve UX on mobile
+
