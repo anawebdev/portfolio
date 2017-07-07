@@ -245,9 +245,11 @@ p {
     font-family: 'Open Sans', sans-serif;
     font-size: 0.8em;
     }
-a:link, a:active, a:hover, a:visited, a {
+#aboutMe {
+    a:link, a:active, a:hover, a:visited, a {
     color: white;
     font-style: italic;
+    }
 }
 
 .path {
