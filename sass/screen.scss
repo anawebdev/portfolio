@@ -2,18 +2,18 @@
 
 //Color scheme
 
-$dark-grey: #0B0C10;
-$medium-grey: #1F2833;
-$light-pink: #C5C6C7;
-$bright-turqoise: #66FCF1;
-$medium-blue: #45A29E;
+$primary: #00B295;
+$secondary: #828A95;
+$tertiary: #CEEAF7;
+$white: #F7F9F9;
+$accent: #EF6461;
 
 $shadow: rgba(0,0,0, 0.18);
 
 //GENERAL 
 
 body, html {
-    background: $dark-grey;
+    //background: $primary;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -34,7 +34,7 @@ span {
     z-index: 999;
     right: 30px;
     bottom: 20px;
-    color: white;
+    color: $white;
     font-size: 2.5em;
 }
 
@@ -52,7 +52,7 @@ nav {
     position: absolute;
     width: 100%;
     z-index: 999;
-    border-bottom: 1px solid $medium-grey;
+    border-bottom: 1px solid $white;
 }
 
 ul {
@@ -70,14 +70,15 @@ li {
 li a { 
     display: block;
     padding: 18px 30px;
-    color: $light-pink;
+    color: $white;
     text-decoration: none;
     text-align: center;
     }      
+
 li a:hover {
     text-decoration: none;
-    border: 1px solid $medium-grey;
-    color: white;
+    border: 1px solid $white;
+    color: $white;
     font-weight: 700;
 }
 
@@ -106,10 +107,10 @@ h4 {
 
 .access-btn {
     text-align: center;
-    border: 2px solid white;
+    border: 2px solid $secondary;
     padding: 5px;
     background: none;
-    color: white;
+    color: $secondary;
     border-radius: 0;
     width:50%;
     margin-left: 25%;
@@ -127,23 +128,14 @@ h4 {
 }
 
 .access-btn:hover {
-    color: $dark-grey;
-    background: white;
+    color: $white;
+    background: $secondary;
     cursor: pointer;
     font-weight: 700;
 }
 
 #projects a {
     cursor: default;
-}
-
-#particle-canvas {
-    position: absolute!important;
-    height: 100%;
-    width: 100%;
-    z-index: 100!important;
-    top: 0!important;
-    left: 0;
 }
 
 //LANDING PAGE
@@ -158,7 +150,7 @@ h4 {
 #landingPage {
     min-height: 100vh;
     width: 100%;
-    color: $light-pink;
+    color: $white;
     font-family: 'Droid Sans Mono', monospace;
     h1 {
         font-size: 3em;
@@ -180,7 +172,7 @@ h4 {
     text-align: center;
     font-size: 1.5em;
     font-variant: small-caps;
-    color: $light-pink;
+    color: $white;
     h1 {
         font-size: 2.5em;
         letter-spacing: 0.27em;
@@ -191,42 +183,47 @@ h4 {
 .readMore {
     position: relative!important;
     z-index: 999!important;
-    border: solid 1px $light-pink;
+    border: solid 1px $white;
     border-radius: 0;
     padding: 10px 35px;
 }
 
 .readMore:hover {
     font-weight: 900;
-    color: $dark-grey;
-    background:$light-pink;
+    color: $primary;
+    background:$white;
 }
 
 .readMore, .readMore:link, .readMore:active {
-    color:$light-pink;
+    color:$white;
     text-decoration: none;
 }
 
 //ABOUT ME
 
+#landingPage {
+    background: $primary;
+    color: $white;
+}
+
 #aboutMe {
-    background: $medium-grey;
-    color: $light-pink;
+    background: $secondary;
+    color: $white;
 }
 
 #skills {
-    background: $medium-blue;
-    color: $light-pink;
+    background: $secondary;
+    color: $white;
 }
 
 #projects {
-    background: $dark-grey;
-    color: $light-pink;
+    background: $white;
+    color: $secondary;
 }
 
 #contact {
-    background: $medium-blue;
-    color: $light-pink;
+    background: $primary;
+    color: $white;
 }
 
 .canvas-wrap {
@@ -247,7 +244,7 @@ p {
     }
 #aboutMe {
     a:link, a:active, a:hover, a:visited, a {
-    color: white;
+    color: $white;
     font-style: italic;
     }
 }
@@ -353,10 +350,13 @@ p {
 
 #skills {
     img {
-        border: 3px solid white;
+        border: 3px solid $white;
         width: 100%;
         margin-left: auto;
         margin-right: auto;
+    }
+    img:hover {
+        box-shadow: 3px 3px 10px $shadow;
     }
 }
 
@@ -421,7 +421,7 @@ p {
   position: absolute;
   width: 100%;
   height: 100%;
-  border: 3px white solid;
+  border: 3px $secondary solid;
   -webkit-backface-visibility: visible;
   -moz-backface-visibility: visible;
   -ms-backface-visibility: visible;
@@ -439,7 +439,6 @@ p {
 
 .front {
   margin-bottom: 100px;
-  background: $dark-grey;
   -webkit-transform: rotateY(0deg);
   -moz-transform: rotateY(0deg);
   -ms-transform: rotateY(0deg);
@@ -450,7 +449,7 @@ p {
 
 .side {
   margin-bottom: 100px;
-  background: $dark-grey;
+  background: $white;
   -webkit-transform: rotateY(90deg);
   -moz-transform: rotateY(90deg);
   -ms-transform: rotateY(90deg);
@@ -495,21 +494,20 @@ textarea {
 textarea, input {
     width: 100%;
     padding: 5px;
-    background: white;
-    border:3px solid white;
+    background: $white;
+    border:3px solid $white;
     box-shadow: 3px 3px 5px $shadow;
 }
 
 .contact-btn {
     position: relative;
     text-align: center;
-    background: pink;
+    background: $primary;
     margin: 5px;
     width: 100%;
-    background: $medium-blue;
-    border: 3px solid white;
+    border: 3px solid $white;
     border-radius: 0;
-    color: white;
+    color: $white;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
 }
@@ -523,28 +521,28 @@ i {
     margin-right: 5px;
 }
 ::-webkit-input-placeholder {
-    color:silver;
+    color:$secondary;
     font-style: italic;
     font-size: 0.8em;
     padding: 8px;
 }
 
 ::-moz-placeholder {
-    color:silver;
+    color:$secondary;
     font-style: italic;
     font-size: 0.8em;
     padding: 8px;
 }
 
 :-moz-placeholder {
-    color:silver;
+    color:$secondary;
     font-style: italic;
     font-size: 0.8em;
     padding: 8px;
 }
 
 :-ms-input-placeholder {
-    color:silver;
+    color:$secondary;
     font-style: italic;
     font-size: 0.8em;
     padding: 8px;
@@ -558,7 +556,7 @@ i {
 }
 
 ::placeholder {
-    color:silver;
+    color:$secondary;
     font-style: italic;
     font-size: 0.8em;
     padding: 8px;
@@ -566,8 +564,8 @@ i {
 
 .contact-btn:hover {
     cursor: pointer;
-    color: $medium-blue;
-    background: white;
+    color: $primary;
+    background: $white;
     }
 
 //MEDIA QUERIES
@@ -575,7 +573,10 @@ i {
 /* xs < 768 */
 @media screen and (max-width: 767px) {
     body {
-        font-size: 0.8em;
+        font-size: 0.8em; 
+    }
+    .text-container{
+        padding: 0;
     }
     .box-scene {
         margin-bottom:200px;

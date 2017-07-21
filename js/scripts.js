@@ -27,20 +27,6 @@ var offsetLap = function() {
 offsetMe();
 offsetLap();
 
-// particles
-
-var options = {
-	particleColor: '#4e627a',
-	background: './images/transparent.png',
-	interactive: true,
-	speed: 'slow',
-	density: 'medium'
-};
-var particleCanvas = new ParticleNetwork(document.getElementById('particle-canvas'), options);
-
-var canvas = document.getElementById("my-canvas");
-//var context = canvas.getContext("2d");
-
 // SCROLL TO TOP
 
 $(document).scroll(function() {
