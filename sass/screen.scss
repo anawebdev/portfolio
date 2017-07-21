@@ -34,7 +34,7 @@ span {
     z-index: 999;
     right: 30px;
     bottom: 20px;
-    color: $white;
+    color: white;
     font-size: 2.5em;
 }
 
@@ -107,7 +107,7 @@ h4 {
 
 .access-btn {
     text-align: center;
-    border: 2px solid $secondary;
+    border: 2px solid silver;
     padding: 5px;
     background: none;
     color: $secondary;
@@ -128,8 +128,9 @@ h4 {
 }
 
 .access-btn:hover {
-    color: $white;
+    color: white;
     background: $secondary;
+    border: 4px solid $secondary;
     cursor: pointer;
     font-weight: 700;
 }
@@ -151,7 +152,7 @@ h4 {
     min-height: 100vh;
     width: 100%;
     color: $white;
-    font-family: 'Droid Sans Mono', monospace;
+    font-family: 'Unica One', cursive;
     h1 {
         font-size: 3em;
     }
@@ -171,7 +172,6 @@ h4 {
     display: table-row;
     text-align: center;
     font-size: 1.5em;
-    font-variant: small-caps;
     color: $white;
     h1 {
         font-size: 2.5em;
@@ -211,13 +211,18 @@ h4 {
     color: $white;
 }
 
+#education {
+    background: $tertiary;
+    color: $secondary;
+}
+
 #skills {
     background: $secondary;
     color: $white;
 }
 
 #projects {
-    background: $white;
+    background: white;
     color: $secondary;
 }
 
@@ -244,7 +249,7 @@ p {
     }
 #aboutMe {
     a:link, a:active, a:hover, a:visited, a {
-    color: $white;
+    color: $tertiary;
     font-style: italic;
     }
 }
@@ -345,6 +350,188 @@ p {
 #laptop {
     margin-left:20px;
 }
+// EDUCATION 
+
+// the following section is from taken from codepen and edited 
+
+ .timeline {
+    list-style: none;
+    padding: 10px 0;
+    position: relative;
+    font-weight: 300;
+    h4 {
+    margin: 30px 0 18px 0;
+    text-align: center;
+}
+}
+.timeline:before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content:"";
+    width: 2px;
+    background: #ffffff;
+    left: 50%;
+    margin-left: -1.5px;
+}
+.timeline > li {
+    margin-bottom: 30px;
+    position: relative;
+    width: 50%;
+    float: left;
+    clear: left;
+}
+.timeline > li:before, .timeline > li:after {
+    content: " ";
+    display: table;
+}
+.timeline > li:after {
+    clear: both;
+}
+.timeline > li:before, .timeline > li:after {
+    content:" ";
+    display: table;
+}
+.timeline > li:after {
+    clear: both;
+}
+.timeline > li > .timeline-panel {
+    width: calc(100% - 25px);
+    width: -moz-calc(100% - 25px);
+    width: -webkit-calc(100% - 25px);
+    float: left;
+    border: 1px solid $white;
+    box-shadow: 3px 3px 8px $shadow;
+    background: white;
+    position: relative;
+}
+
+.timeline > li > .timeline-panel:before {
+    position: absolute;
+    top: 26px;
+    right: -15px;
+    display: inline-block;
+    border-top: 15px solid transparent;
+    border-left: 15px solid $white;
+    border-right: 0 solid $white;
+    border-bottom: 15px solid transparent;
+    content:" ";
+}
+
+.timeline > li > .timeline-panel:after {
+    position: absolute;
+    top: 27px;
+    right: -14px;
+    display: inline-block;
+    border-top: 14px solid transparent;
+    border-left: 14px solid white;
+    border-right: 0 solid white;
+    border-bottom: 14px solid transparent;
+    content:" ";
+}
+
+.timeline > li.timeline-inverted > .timeline-panel {
+    float: right;
+}
+.timeline > li.timeline-inverted > .timeline-panel:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+}
+.timeline > li.timeline-inverted > .timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+}
+.timeline-title {
+    margin-top: 0;
+    color: inherit;
+}
+.timeline-heading h4 {
+    font-weight: 400;
+    padding: 0 15px;
+    color: $accent;
+    font-weight: 700;
+}
+.timeline-body > p, .timeline-body > ul {
+    padding: 10px 15px;
+    margin-bottom: 0;
+}
+.timeline > li.timeline-inverted {
+    float: right;
+    clear: right;
+}
+.timeline > li:nth-child(2) {
+    margin-top: 60px;
+}
+.no-float {
+    float: none !important;
+}
+@media (max-width: 767px) {
+    ul.timeline:before {
+        left: 40px;
+    }
+    ul.timeline > li {
+        margin-bottom: 0px;
+        position: relative;
+        width:100%;
+        float: left;
+        clear: left;
+    }
+    ul.timeline > li > .timeline-panel {
+        width: calc(100% - 65px);
+        width: -moz-calc(100% - 65px);
+        width: -webkit-calc(100% - 65px);
+    }
+    ul.timeline > li > .timeline-badge {
+        left: 28px;
+        margin-left: 0;
+        top: 16px;
+    }
+    ul.timeline > li > .timeline-panel {
+        float: right;
+    }
+    ul.timeline > li > .timeline-panel:before {
+        border-left-width: 0;
+        border-right-width: 15px;
+        left: -15px;
+        right: auto;
+    }
+    ul.timeline > li > .timeline-panel:after {
+        border-left-width: 0;
+        border-right-width: 14px;
+        left: -14px;
+        right: auto;
+    }
+    .timeline > li.timeline-inverted {
+        float: left;
+        clear: left;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .timeline > li.timeline-inverted > .timeline-badge {
+        left: 28px;
+    }
+}
+
+.highlight {
+    color: $accent;
+    font-weight: 500;
+}
+
+.list-elem {
+    line-height: .5em;
+    display:list-item;
+    list-style:disc outside none;
+    text-indent: -15px;
+    margin-left: 45px;
+}
+
+.timeline-body:last-child{
+    margin-bottom: 20px;
+}
 
 // SKILLLS
 
@@ -421,7 +608,7 @@ p {
   position: absolute;
   width: 100%;
   height: 100%;
-  border: 3px $secondary solid;
+  border: 3px silver solid;
   -webkit-backface-visibility: visible;
   -moz-backface-visibility: visible;
   -ms-backface-visibility: visible;
@@ -449,7 +636,7 @@ p {
 
 .side {
   margin-bottom: 100px;
-  background: $white;
+  background: white;
   -webkit-transform: rotateY(90deg);
   -moz-transform: rotateY(90deg);
   -ms-transform: rotateY(90deg);
@@ -494,7 +681,7 @@ textarea {
 textarea, input {
     width: 100%;
     padding: 5px;
-    background: $white;
+    background: white;
     border:3px solid $white;
     box-shadow: 3px 3px 5px $shadow;
 }
@@ -505,7 +692,7 @@ textarea, input {
     background: $primary;
     margin: 5px;
     width: 100%;
-    border: 3px solid $white;
+    border: 3px solid white;
     border-radius: 0;
     color: $white;
     text-align: center;
@@ -565,7 +752,7 @@ i {
 .contact-btn:hover {
     cursor: pointer;
     color: $primary;
-    background: $white;
+    background: white;
     }
 
 //MEDIA QUERIES

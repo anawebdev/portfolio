@@ -1,13 +1,15 @@
+---
+!!! Not yet fully optimized for Safari!!!
+---
 
 **Languages & libraries used**
 
 -	HTML5
--	CSS3 + SASS (using compass)
+-	CSS3 + SCSS (using compass)
 -	JavaScript
 -	jQuery
 -	Bootstrap
 -	AOS (Animate on Scroll) – for fading in text
--	Particle Canvas Network – for adding the particle effects on the Landing Page
 
 **Responsiveness**
 
@@ -31,7 +33,8 @@
 
 -   performance: by using browser cache
 -   performance: by minifying files
--   cross browser compatibility: by adding a deparate stylesheet for IE and Safari
+-   cross browser compatibility: fixing properties for Safari in the education section
+-   cross browser compatibility: by adding a separate stylesheet for IE and Safari
 -   IE does not display properly the "Projects" section/animations
 -   Safari does not display path animations correctly and the canvas particle network library
 -   appearance: changing the order in which columns display after reaching their breakpoints might improve UX on mobile
