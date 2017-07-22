@@ -1,0 +1,7 @@
+<IfModule mod_expires.c>
+   ExpiresActive on
+   ExpiresDefault "access plus 1 month"
+   ExpiresByType ./images/ "access plus 1 year"
+   ExpiresByType ./fonts/ "access plus 1 year"
+   ExpiresByType js/scripts.js "access plus 1 year"
+</IfModule>
